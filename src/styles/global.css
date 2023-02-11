@@ -1,0 +1,33 @@
+.cover-gradient {
+  background: linear-gradient(
+    169.4deg,
+    rgba(57, 132, 244, 0.04) -6.01%,
+    rgba(12, 211, 255, 0.04) 36.87%,
+    rgba(47, 124, 240, 0.04) 78.04%,
+    rgba(14, 101, 232, 0.04) 103.77%
+  );
+}
+
+.text-header-gradient {
+  background: rgb(57, 132, 244);
+  background: linear-gradient(
+    169.4deg,
+    #3984f4 -6.01%,
+    #0cd3ff 36.87%,
+    #2f7cf0 78.04%,
+    #0e65e8 103.77%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-blue-gradient,
+.text-gradient {
+  background: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
+}
+
+.text-gradient {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
