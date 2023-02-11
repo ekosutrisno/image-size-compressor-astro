@@ -1,9 +1,11 @@
 <template>
-        <div @dragover.prevent="dragover" @dragleave="dragleave" @drop.prevent="drop" class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+        <div @dragover.prevent="dragover" @dragleave="dragleave" @drop.prevent="drop" class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12 px-4">
             <div class="absolute inset-0 bg-[url(/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
             <div :class="[isDrag ? 'border-dashed border-sky-400' : 'border-gray-900/5']" class="relative bg-white px-6 py-8 border-2 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
                 <div class="mx-auto max-w-md">
-                    <img src="/file.svg" width="48" height="48" class="h-12" alt="Image Compressor" />
+                    <a href="/">
+                        <img src="/file.svg" width="48" height="48" class="h-12" alt="Image Compressor" />
+                    </a>
                     <div class="text-base leading-7 text-gray-600">
                         <p>Reduce your file size to save more storage space.</p>
                         <UploadImage :files="files" @on-upload="(payload: ImagesModel[])=> upload(payload)" />

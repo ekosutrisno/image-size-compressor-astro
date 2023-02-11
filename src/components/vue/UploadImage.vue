@@ -7,7 +7,7 @@
         <span class="mt-2 text-base leading-normal">Select an image</span>
         <input @change="select" type='file' multiple accept="image/apng, image/avif, image/gif, image/jpeg, image/jpg, image/png, image/svg+xml, image/webp" class="hidden" />
     </label>
-    <div class="text-center py-5 text-gray-400 uppercase">
+    <div class="text-center py-5 text-gray-400 uppercase hidden sm:block">
         OR <p class="mt-2 text-sky-500">Drag your image anywhere.</p>
     </div>
 </div>
